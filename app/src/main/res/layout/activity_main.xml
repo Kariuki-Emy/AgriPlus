@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F9EBC7">
+
+    <ImageButton
+        android:id="@+id/mbtn_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:background="#DDDADA"
+        android:backgroundTint="@null"
+        android:contentDescription="@string/material_motion_easing_standard"
+        android:scaleType="centerInside"
+        android:src="@drawable/profileimg"/>
+
+
+    <TextView
+        android:layout_marginStart="145dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvtitlemain"
+        android:text="AgriPlus"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="145dp" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdvw1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#F9EBC7"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="198dp"
+            android:src="@drawable/fruities"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/mbtn_products"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="340dp"
+                android:adjustViewBounds="true"
+                android:background="#DDDADA"
+                android:backgroundTint="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/prettyshop" />
+
+            <TextView
+                android:id="@+id/tvproduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Shop" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/mbtn_cart"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="340dp"
+                android:adjustViewBounds="true"
+                android:background="#F9EBC7"
+                android:scaleType="centerInside"
+                android:src="@drawable/prettycart" />
+
+            <TextView
+                android:id="@+id/tvcart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="View Cart" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/horiview1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="470dp"
+        android:contentDescription="@string/material_motion_easing_linear">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewpic1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/imgviewpic1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F9EBC7"
+                    android:src="@drawable/fruits" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewpic2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/imgviewpic2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F9EBC7"
+                    android:src="@drawable/fruti" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewpic3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/imgviewpic3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F9EBC7"
+                    android:src="@drawable/veggies" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#E1D3D3"
+    tools:context=".ProfileActivity">
+
+
+    <ImageView
+        android:id="@+id/imgprof"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="80dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:backgroundTint="#E1D3D3"
+        android:src="@drawable/profile3"
+        android:layout_marginLeft="100dp" />
+
+    <TextView
+        android:id="@+id/tvname"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kamau James"
+        android:layout_marginTop="300dp"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginLeft="46dp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardaccount"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        app:cardCornerRadius="15dp"
+        android:elevation="10dp"
+        android:background="#ECE4E4">
+
+        <TextView
+            android:id="@+id/tvAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accounts and Backup"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"/>
+
+        <ImageView
+            android:id="@+id/imgviewaccount"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/profileicon"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="250dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardsec"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        app:cardCornerRadius="15dp"
+        android:elevation="10dp"
+        android:background="#ECE4E4">
+
+
+        <TextView
+            android:id="@+id/tvSecurity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Security"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"/>
+
+        <ImageView
+            android:id="@+id/imgviewsecurity"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/security"
+            android:layout_marginLeft="250dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardhelp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginRight="25dp"
+        android:background="#ECE4E4"
+        android:elevation="10dp"
+        app:cardCornerRadius="15dp">
+
+        <TextView
+            android:id="@+id/tvHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:text="Help and FAQ's"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/imgviewhelp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/help"
+            android:layout_marginLeft="260dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+
